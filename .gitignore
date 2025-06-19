@@ -1,4 +1,6 @@
 .marscode
+# Archivos y directorios de configuración del navegador
+browser_profile/
 
 # Entorno virtual
 .env

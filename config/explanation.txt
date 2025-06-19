@@ -1,0 +1,19 @@
+Breve explicación de los parámetros cargados settings.json:
+
+audio: Configuración de la captura de sonido.
+    sample_rate: Calidad de muestreo (16kHz es recomendado para Vosk).
+    channels: Mono (1) o Estéreo (2).
+    buffer_size: Tamaño del buffer de audio.
+    input_device_index: Índice del dispositivo de audio de entrada (descubierto automáticamente si es -1).
+    pulse_audio_loopback: Para Linux, si se necesita configurar bucle.
+transcription: Parámetros del motor de transcripción.
+    language: Idioma por defecto (español).
+    vosk_model_path: Ruta donde se esperará el modelo de Vosk (lo veremos más adelante).
+    vad_aggressiveness: Nivel de agresividad del detector de actividad de voz (Voice Activity Detection).
+automation: Ajustes del navegador y Meet.
+    headless_mode: Si el navegador se ejecuta de forma visible u oculta.
+    auto_join_meeting: Si el bot se une automáticamente.
+    mute_audio_on_join: Si se une con el audio silenciado.
+    web_driver_path: Ruta manual al WebDriver si webdriver-manager falla o no se usa.
+output: Dónde se guardan los resultados.
+logging: Nivel de detalle de los logs y archivo donde se guardan.

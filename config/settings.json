@@ -1,0 +1,32 @@
+{
+    "audio": {
+        "sample_rate": 16000,
+        "channels": 1,
+        "buffer_size": 4096,
+        "input_device_index": -1,
+        "pulse_audio_loopback": true
+    },
+    "transcription": {
+        "language": "es",
+        "vosk_model_path": "vosk_model",
+        "vad_aggressiveness": 3
+    },
+    "automation": {
+        "headless_mode": true,
+        "auto_join_meeting": true,
+        "mute_audio_on_join": true,
+        "web_driver_path": null
+    },
+    "output": {
+        "transcripts_directory": "output/transcripts"
+    },
+    "logging": {
+        "level": "INFO",
+        "file": "bot.log"
+    },
+    "browser": {
+        "headless": false,
+        "user_data_dir": "./browser_profile",
+        "chromedriver_path": "/usr/bin/chromedriver"
+    }
+}

@@ -1,0 +1,37 @@
+.marscode
+
+# Entorno virtual
+.env
+.venv/
+__pypackages__/
+.mypy_cache/
+.pytest_cache/
+
+# Archivos de caché de Python
+__pycache__/
+*.pyc
+*.egg-info/
+.Python/
+
+# Archivos de log y temporales
+*.log
+*.tmp
+*.swp
+*~
+.DS_Store # macOS
+
+# Archivos de salida del bot
+output/transcripts/*
+!output/transcripts/.gitkeep # Permite la carpeta vacía pero no el contenido
+
+# Archivos de configuración sensibles (si los hubiera en el futuro)
+# Por ejemplo, si tuvieras un archivo de credenciales no versionado
+# creds.json
+
+# Ignorar Poetry/PDM lock file si no quieres que sea versionado (normalmente sí lo quieres)
+# poetry.lock
+# pdm.lock
+
+# Ignorar la base de datos local de SQLite (generalmente no se versiona)
+*.db
+*.sqlite

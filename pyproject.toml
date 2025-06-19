@@ -1,0 +1,20 @@
+[project]
+name = "google-meet-transcription-bot"
+version = "0.1.0"
+description = "Bot para transcribir reuniones de Google Meet."
+authors = [
+    {name = "emiliovianconi@gmail.com"}
+]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "selenium (>=4.33.0,<5.0.0)",
+    "pyaudio (>=0.2.14,<0.3.0)",
+    "pydub (>=0.25.1,<0.26.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
